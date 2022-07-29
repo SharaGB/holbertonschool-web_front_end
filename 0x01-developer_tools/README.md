@@ -1,9 +1,8 @@
 # Developer tools
+![0872ca9b19e11650e355](https://user-images.githubusercontent.com/90220978/181837922-7aea2fa4-05cd-464c-a435-b142c77d9a7c.jpeg)
 
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/12/0872ca9b19e11650e355.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220729%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220729T191522Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=70817bd5464d2d3b0d300e7f44579f8eebf2aac2c67fcd91d3f16499b963cf0e" alt="" style=""></p>
-
 <p>In this project, you will analyze this website <a href="https://dev-tools.hbtn.info/#" title="https://dev-tools.hbtn.info/" target="_blank">https://dev-tools.hbtn.info/</a>.</p>
 
 <h2>Resources</h2>
