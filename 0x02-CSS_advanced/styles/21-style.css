@@ -190,6 +190,16 @@ a:active {
     padding: var(--footer-padding);
 }
 
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.footer ul {
+    text-align: right;
+}
+
 .navbar-menu {
     float: right;
 }
@@ -242,16 +252,6 @@ ul.row {
 [class^="col-"], [class*="col-"] {
     float: left;
     padding: 0.5rem;
-}
-
-.footer-copyright {
-    margin: 0;
-    font-size: var(--font-size-small);
-    color: var(--text-color);
-}
-
-.footer ul {
-    text-align: right;
 }
 
 /* custom properties
