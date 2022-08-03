@@ -3,7 +3,7 @@
 /* Universal box sizing rule
    ========================================================================== */
 
-   *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -190,6 +190,20 @@ a:active {
     padding: var(--footer-padding);
 }
 
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.footer ul {
+    text-align: right;
+}
+
+.footer-address {
+    color: var(--text-color);
+}
+
 .navbar-menu {
     float: right;
 }
@@ -248,20 +262,6 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background: var(--color-black);
-}
-
-.footer-copyright {
-    margin: 0;
-    font-size: var(--font-size-small);
-    color: var(--text-color);
-}
-
-.footer ul {
-    text-align: right;
-}
-
-.footer-address {
-    color: var(--text-color);
 }
 
 .social-link {
