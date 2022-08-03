@@ -106,11 +106,38 @@ a:active {
 }
 
 /**
+ * Set the padding on all 4 sides to section-padding custom property.
+ */
+
+.section {
+    padding: var(--section-padding);
+}
+
+/**
  * Set horizontal alignment of that class (custom property)
  */
 
 .section-header {
     text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/**
+ * Set the padding on all 4 sides to section-body-padding custom property.
+ */
+
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/**
+ * 1. Set the padding on all 4 sides to section-footer-padding custom property.
+ * 2. Set the horizontal alignment with section-footer-align custom property.
+ */
+
+.section-footer {
+    padding: var(--section-footer-padding); /* 1 */
+    text-align: var(--section-footer-align); /* 2 */
 }
 
 /**
@@ -153,6 +180,14 @@ a:active {
     margin-right: auto;
 }
 
+/**
+ * Set the padding on all 4 sides to footer-padding custom property.
+ */
+
+.footer {
+    padding: var(--footer-padding);
+}
+
 /* custom properties
    ========================================================================== */
 
@@ -179,4 +214,10 @@ a:active {
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
 }
