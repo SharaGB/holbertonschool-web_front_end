@@ -21,7 +21,7 @@
 
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/12/ce6718f1b55e6c1580c6.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4e77ebbf8e00e01dccc1787623b72f70f32960400c2e1d3b8d101b8bf2901fc4" alt="" style=""></p>
+    <p><img src="https://user-images.githubusercontent.com/90220978/182697699-e5868603-d253-4229-ae17-82ea3c8f4996.jpg" alt="" style=""></p>
 
 <h2>Resources</h2>
 
@@ -74,19 +74,19 @@
 
 <h4><code>favicon.jpg</code></h4>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/2ba3a0d7878316de5aaa.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=e55bb22b121f6d3401f7b2deb0ad568feba17588444c0708436c8760787e27ed" alt="" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/182697892-ab956d2e-efc3-451e-aa4c-0186da58edb9.jpg" alt="" style=""></p>
 
 <p><a href="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/2ba3a0d7878316de5aaa.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=345600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=c81287b173b85f9d4a1a7a6e1d5661241616cd1b786fc07ad686bdb162673f25" title="download favicon.jpg" target="_blank">download favicon.jpg</a></p>
 
 <h4><code>logo-black.png</code></h4>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/06f32e89f2a82582234e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0e9362603ab624fa2b04135d2f2144ccda2545ff894032b95079a0288eafc183" alt="" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/182698176-ac2bb9e4-68f0-42f7-a18a-7eefad77e34f.png" alt="" style=""></p>
 
 <p><a href="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/06f32e89f2a82582234e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=345600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fdf837974af975ab80800ccbae8fe8fc3c68c25931c100a648c231fb9a493a23" title="download logo-black.png" target="_blank">download logo-black.png</a></p>
 
 <h4><code>logo-white.png</code></h4>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/0fa48a04048a2d050cab.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=d3f7cfa320d3b521f66642410f85a2e08783c23a217d3e261bfd3b75259448d8" alt="" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/182698307-b1b1b077-8a05-45a5-8b19-b9075cf01b9c.png" alt="" style=""></p>
 
 <p><a href="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/0fa48a04048a2d050cab.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=345600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=05f85c858073d4f55015fe14479b1d6e9fd7f325419d77cb44b52e9ba56faf47" title="download logo-white.png" target="_blank">download logo-white.png</a></p>
 
@@ -456,7 +456,7 @@
 
 <h2>End goal of the project</h2>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/10/b9a220ba79af9ede6fc5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220802%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220802T190200Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=6e0054f0041302063668e5842c54d841898ca63c005f2392d0cf822dff3ae17e" alt="" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/182698426-bc70d9cc-2555-4914-890c-afd9a26567a8.png" alt="" style=""></p>
 
 <p>Important note: <strong>details are important!</strong> lowercase vs uppercase / wrong letter… be careful!</p>
 
