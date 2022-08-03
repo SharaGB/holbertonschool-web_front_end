@@ -1,0 +1,315 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Universal box sizing rule
+   ========================================================================== */
+
+   *, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Make the displacement behavior smooth.
+ * 2. All fonts should be at 62.5% of their normal size.
+ */
+
+html {
+    scroll-behavior: smooth; /* 1 */
+    font-size: 62.5%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * 1. Reset their color to text-color custom properties.
+ * 2. Set font-family to font-family-base custom properties.
+ * 3. Should have their sizes set to font-size-medium custom properties.
+ * 4. Set the boldness of fonts to font-weight-regular custom properties.
+ * 5. Set the minimum height of line boxes to line-height-base custom properties.
+ */
+
+body {
+    color: var(--text-color); /* 1 */
+    font-family: var(--font-family-base); /* 2 */
+    font-size: var(--font-size-medium); /* 3 */
+    font-weight: var(--font-weight-regular); /* 4 */
+    line-height: var(--line-height-base);  /* 5 */
+}
+
+/**
+ * 1. Set its font-family to font-family-title custom properties.
+ * 2. Set the boldness of fonts to font-weight-bold custom properties.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title); /* 1 */
+    font-weight: var(--font-weight-bold); /* 2 */
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Reset their color to text-color custom properties.
+ * 2. Stylize so that the text is not decorated with anything.
+ */
+
+a:link {
+    color: var(--text-color); /* 1 */
+    text-decoration: none; /* 2 */
+}
+
+/**
+ * Points to the visited state for the link, text in italics.
+ */
+
+a:visited {
+    font-style: italic;
+}
+
+/**
+ * Point to the hover state for the link, decorate links
+ * with an underline when hovered over
+ */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * Point to the active state for the link, sets the background color with
+ * the color-light-grey custom property.
+ */
+
+a:active {
+    background-color: var(--color-light-grey);
+}
+
+/**
+ * All elements should have their display to none.
+ */
+
+.visually-hidden {
+    display: none;
+}
+
+/**
+ * All elements should have their foreground color set to #D73953,
+ * custom property on the root element
+ */
+
+.card-category {
+    color: var(--color-primary);
+}
+
+/**
+ * Set the padding on all 4 sides to section-padding custom property.
+ */
+
+.section {
+    padding: var(--section-padding);
+}
+
+/**
+ * Set horizontal alignment of that class (custom property)
+ */
+
+.section-header {
+    text-align: var(--section-header-align);
+    padding: var(--section-header-padding);
+}
+
+/**
+ * Set the padding on all 4 sides to section-body-padding custom property.
+ */
+
+.section-body {
+    padding: var(--section-body-padding);
+}
+
+/**
+ * 1. Set the padding on all 4 sides to section-footer-padding custom property.
+ * 2. Set the horizontal alignment with section-footer-align custom property.
+ */
+
+.section-footer {
+    padding: var(--section-footer-padding); /* 1 */
+    text-align: var(--section-footer-align); /* 2 */
+}
+
+/**
+ * 1. Set the family of fonts to font-family-title custom property.
+ * 2. Set the font size to font-size-xx-large custom property.
+ * 3. Set the font weight to font-weight-bold custom property.
+ * 4. Set the margin using section-title-margin custom property.
+ * 5. Set the text color using section-title-color custom property.
+ */
+
+.section-title {
+    font-family: var(--font-family-title); /* 1 */
+    font-size: var(--font-size-xx-large); /* 2 */
+    font-weight: var(--font-weight-bold); /* 3 */
+    margin: var(--section-title-margin); /* 4 */
+    color: var(--section-title-color); /* 5 */
+}
+
+/**
+ * 1. Reset their color to color-primary custom property.
+ * 2. Set the family of fonts to font-family-title custom property.
+ * 3. Transform the text using section-tagline-transform custom property.
+ * 4. Set the weight of fonts to font-weight-bold custom property.
+ */
+
+.section-tagline {
+    color: var(--color-primary); /* 1 */
+    font-family: var(--font-family-title); /* 2 */
+    text-transform: var(--section-tagline-transform); /* 3 */
+    font-weight: var(--font-weight-bold); /* 4 */
+    margin: var(--section-tagline-margin);
+}
+
+/**
+ * 1. 960px wide container.
+ * 2. Evenly distribute the margins on both the left and and right side
+ */
+
+.container {
+    width: 960px; /* 1 */
+    margin-left: auto; /* 2 */
+    margin-right: auto; /* 2 */
+}
+
+/**
+ * Set the padding on all 4 sides to footer-padding custom property.
+ */
+
+.footer {
+    padding: var(--footer-padding);
+}
+
+.navbar-menu {
+    float: right;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover)
+}
+
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+[class^="col-"], [class*="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+[data-section-theme="dark"] {
+    --text-color: var(--color-white);
+    --section-title-color: var(--color-white);
+    background: var(--color-black);
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
+}
+
+.footer ul {
+    text-align: right;
+}
+
+.footer-address {
+    color: var(--text-color);
+}
+
+.social-link {
+    display: block;
+}
+
+.social-link > svg {
+    fill: var(--text-color);
+}
+
+/* custom properties
+   ========================================================================== */
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+    --nav-item-font-family: var(--font-family-title);
+    --nav-item-font-weight: var(--font-weight-bold);
+    --nav-item-font-size: var(--font-size-medium);
+    --nav-item-letter-spacing: 0.04rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
+    --section-tagline-margin: 0;
+}
