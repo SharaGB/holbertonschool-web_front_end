@@ -3,7 +3,9 @@
 /* Universal box sizing rule
    ========================================================================== */
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
 }
 
@@ -16,8 +18,10 @@
  */
 
 html {
-    scroll-behavior: smooth; /* 1 */
-    font-size: 62.5%; /* 2 */
+    scroll-behavior: smooth;
+    /* 1 */
+    font-size: 62.5%;
+    /* 2 */
 }
 
 /* Sections
@@ -32,11 +36,16 @@ html {
  */
 
 body {
-    color: var(--text-color); /* 1 */
-    font-family: var(--font-family-base); /* 2 */
-    font-size: var(--font-size-medium); /* 3 */
-    font-weight: var(--font-weight-regular); /* 4 */
-    line-height: var(--line-height-base);  /* 5 */
+    color: var(--text-color);
+    /* 1 */
+    font-family: var(--font-family-base);
+    /* 2 */
+    font-size: var(--font-size-medium);
+    /* 3 */
+    font-weight: var(--font-weight-regular);
+    /* 4 */
+    line-height: var(--line-height-base);
+    /* 5 */
 }
 
 /**
@@ -44,9 +53,16 @@ body {
  * 2. Set the boldness of fonts to font-weight-bold custom properties.
  */
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title); /* 1 */
-    font-weight: var(--font-weight-bold); /* 2 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-title);
+    /* 1 */
+    font-weight: var(--font-weight-bold);
+    /* 2 */
 }
 
 /* Grouping content
@@ -58,8 +74,10 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 a:link {
-    color: var(--text-color); /* 1 */
-    text-decoration: none; /* 2 */
+    color: var(--text-color);
+    /* 1 */
+    text-decoration: none;
+    /* 2 */
 }
 
 /**
@@ -136,8 +154,10 @@ a:active {
  */
 
 .section-footer {
-    padding: var(--section-footer-padding); /* 1 */
-    text-align: var(--section-footer-align); /* 2 */
+    padding: var(--section-footer-padding);
+    /* 1 */
+    text-align: var(--section-footer-align);
+    /* 2 */
 }
 
 /**
@@ -149,11 +169,16 @@ a:active {
  */
 
 .section-title {
-    font-family: var(--font-family-title); /* 1 */
-    font-size: var(--font-size-xx-large); /* 2 */
-    font-weight: var(--font-weight-bold); /* 3 */
-    margin: var(--section-title-margin); /* 4 */
-    color: var(--section-title-color); /* 5 */
+    font-family: var(--font-family-title);
+    /* 1 */
+    font-size: var(--font-size-xx-large);
+    /* 2 */
+    font-weight: var(--font-weight-bold);
+    /* 3 */
+    margin: var(--section-title-margin);
+    /* 4 */
+    color: var(--section-title-color);
+    /* 5 */
 }
 
 /**
@@ -164,10 +189,14 @@ a:active {
  */
 
 .section-tagline {
-    color: var(--color-primary); /* 1 */
-    font-family: var(--font-family-title); /* 2 */
-    text-transform: var(--section-tagline-transform); /* 3 */
-    font-weight: var(--font-weight-bold); /* 4 */
+    color: var(--color-primary);
+    /* 1 */
+    font-family: var(--font-family-title);
+    /* 2 */
+    text-transform: var(--section-tagline-transform);
+    /* 3 */
+    font-weight: var(--font-weight-bold);
+    /* 4 */
     margin: var(--section-tagline-margin);
 }
 
@@ -177,9 +206,12 @@ a:active {
  */
 
 .container {
-    width: 960px; /* 1 */
-    margin-left: auto; /* 2 */
-    margin-right: auto; /* 2 */
+    width: 960px;
+    /* 1 */
+    margin-left: auto;
+    /* 2 */
+    margin-right: auto;
+    /* 2 */
 }
 
 /**
