@@ -171,13 +171,14 @@ a:active {
 }
 
 /**
- * Evenly distribute the margins on both the left and and right side
+ * 1. 960px wide container.
+ * 2. Evenly distribute the margins on both the left and and right side
  */
 
 .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 960px; /* 1 */
+    margin-left: auto; /* 2 */
+    margin-right: auto; /* 2 */
 }
 
 /**
