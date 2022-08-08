@@ -1,19 +1,15 @@
 /* Inherit .info class with @extend */
-$font-size-info: 12px;
-$text-color-success: #00FF00;
-$text-color-warning: #FF0000;
-
 .info {
-    font-size: $font-size-info;
+    font-size: 12px;
 
 }
 
 .success {
     @extend .info;
-    color: $text-color-success;
+    color: #00FF00;
 }
 
 .warning {
     @extend .info;
-    color: $text-color-warning;
+    color: #FF0000;
 }
