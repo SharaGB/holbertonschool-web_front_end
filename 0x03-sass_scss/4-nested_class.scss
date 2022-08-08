@@ -1,8 +1,11 @@
 /* Nested declarations */
+$text-color: #3D3D3D;
+$color: #FF0000;
+
 body {
-    color: #3D3D3D;
+    color: $text-color;
 
     .red {
-        color: #FF0000;
+        color: $color;
     }
 }
