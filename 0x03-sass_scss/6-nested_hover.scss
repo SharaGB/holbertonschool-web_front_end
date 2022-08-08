@@ -1,0 +1,11 @@
+/* Nested declarations */
+$text-color: #FF0000;
+$color: #00FF00;
+
+button {
+    color: $text-color;
+
+    &:hover {
+        color: $color;
+    }
+}
