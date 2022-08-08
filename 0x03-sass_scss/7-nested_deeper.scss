@@ -1,0 +1,16 @@
+/* Nested hover */
+$font-size-body: 14px;
+$font-size-h1: 16px;
+$font-size-smaller: 12px;
+
+body {
+    font-size: $font-size-body;
+
+    h1 {
+        font-size: $font-size-h1;
+
+        &.smaller {
+            font-size: $font-size-smaller;
+        }
+    }
+}
