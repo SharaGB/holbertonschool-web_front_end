@@ -2,7 +2,7 @@
 
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/5/9936ba361a3962278900.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220808%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220808T204920Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=9f7ff752e96c4828307cad4b6fb0d8dea0959cafc6a4afe375722dc9c836cf9a" alt="" style=""></p>
+    <p><img src="https://user-images.githubusercontent.com/90220978/183512765-2a2758d2-1b8a-4f06-b361-1258269e1078.jpg" alt="" style=""></p>
 
 <h2>Resources</h2>
 
@@ -72,7 +72,7 @@ $ sass --version
 Ruby Sass 3.7.4
 </code></pre>
 
-<p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/5/ea3f78848fbf9b717e91.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220808%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220808T204920Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=35ccb11d997bb9836e6ab8f1406cbc4900a76d2b29124c5766d3b10606ebbb7e" alt="" style=""></p>
+<p><img src="https://user-images.githubusercontent.com/90220978/183512832-e0b05348-11ee-4e77-8f0b-d66b8bf8af8e.jpg" alt="" style=""></p>
 
   </div>
 </div>
