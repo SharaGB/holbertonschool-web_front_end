@@ -798,11 +798,11 @@ ul.row {
     height: auto;
 }
 
-.post-content:first-child {
+.post-content p:first-child {
     font-size: var(--font-size-x-large);
 }
 
--post-content .img-captions {
+.post-content .img-caption {
     margin: 1rem 0;
     padding:  0 .5rem;
     font-size: var(--font-size-small);
