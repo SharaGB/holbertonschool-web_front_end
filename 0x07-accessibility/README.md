@@ -18,7 +18,7 @@
 
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/12/66ba13a2581c5457361a.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220822%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220822T170400Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=063f04f665378927f5eab961891856f1742cbea32f39adeb42cfb7e8bf81a05a" alt="" style=""></p>
+    <p><img src="https://user-images.githubusercontent.com/90220978/185991098-2221721e-1c20-4d06-a8dd-bd926dea3a95.png" alt="" style=""></p>
 
 <h2>Resources</h2>
 
