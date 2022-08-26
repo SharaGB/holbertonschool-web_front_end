@@ -2,7 +2,7 @@
 
 <div class="panel panel-default" id="project-description">
   <div class="panel-body">
-    <p><img src="https://holbertonintranet.s3.amazonaws.com/uploads/medias/2020/3/81ad5d3e90751bb185d9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220826%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20220826T151519Z&amp;X-Amz-Expires=86400&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=68b0e9b7fe507b5c0390dea72b931c3d1c0b561f10635aed06609f92b58fca04" alt="" loading="lazy" style=""></p>
+    <p><img src="https://user-images.githubusercontent.com/90220978/186951528-9e3fabe4-1f13-4e06-9219-0f886ec53748.png" alt="" loading="lazy" style=""></p>
 
 <p>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. 
 It contains <strong>CSS</strong> and <strong>JavaScript</strong> design templates for <em>typography, forms, buttons, navigation, and other interface components.</em></p>
