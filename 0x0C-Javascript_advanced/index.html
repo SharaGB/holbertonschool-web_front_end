@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript advanced</title>
+    <a></a>
+</head>
+
+<body>
+    <h3>How to test:</h3>
+    <ol>
+        <li>
+            <ul>
+                <li>Open your web inspector in the tab “Console”</li>
+                <li>Copy paste your code</li>
+                <li>Run <code><FONT COLOR="MediumOrchid">welcome('Holberton', 'School');</FONT></code> should prompt an
+                    alert with this content: <code><FONT COLOR="MediumOrchid">Welcome Holberton School!</FONT></code>
+                </li>
+                <li><code><FONT COLOR="MediumOrchid">alert(fullName)</FONT></code>, should return a reference error
+                    <code><FONT COLOR="MediumOrchid">fullName is not defined</FONT></code>
+                </li>
+                <script src="./0-welcome.js"></script>
+            </ul>
+        </li>
+        <li>
+            <p>Running the script should display three popups one by one with the text
+                <code><FONT COLOR="MediumOrchid">Welcome, Welcome Holberton,</FONT></code> and
+                <code><FONT COLOR="MediumOrchid">Welcome Holberton!</FONT></code>
+            </p>
+            <script src="./1-nested_functions.js"></script>
+        </li>
+        <li>
+            <p>Your web console, cop/paste your file<br>
+                Executing the following in the console:</p>
+            <pre>
+                <code>
+                        guillaume();
+                        alex();
+                        fred();
+                </code>
+            </pre>
+            <script src="./2-function_me.js"></script>
+        </li>
+        <li>
+            <p>Executing the following code:</p>
+            <pre>
+                <code>
+                    console.log(classRoom[0]());
+                    console.log(classRoom[3]());
+                    console.log(classRoom[9]());
+                </code>
+            </pre>
+            <p>Should return</p>
+            <pre>
+                <code>
+                    1
+                    4
+                    10
+                </code>
+            </pre>
+            <script src="./3-classrooms.js"></script>
+        </li>
+        <li>
+            <p>Executing the following code:</p>
+            <pre>
+                <code>
+                    console.log(addBy100(20));
+                    console.log(divideBy10(20));
+                    console.log(divideBy100(200));
+                    console.log(addBy1000(20));
+                </code>
+            </pre>
+            <p>Should display in the console:</p>
+            <pre>
+                <code>
+                    120
+                    2
+                    2
+                    1020
+                </code>
+            </pre>
+            <script src="./4-math.js"></script>
+        </li>
+        <li>
+            <h2>YOU'RE BROWSING AS A GUEST</h2>
+            <p>PAGES YOU VIEW IN THIS WINDOW WON'T APPEAR IN THE BROWSER HISTORY AND THEY WON'T LEAVE OTHER TRACES, LIKE
+                COOKIES, ON THE COMPUTER AFTER YOU CLOSE ALL OPEN GUEST WINDOWS. ANY FILES YOU DOWNLOAD WILL BE
+                PRESERVED, HOWEVER.
+            </p>
+            <p>Clicking the <code><FONT COLOR="MediumOrchid">Spooky</FONT></code> button should change the web page to
+                look something like this:</p>
+            <img src="images/spooky.png" alt="Sppoky">
+            <p>Clicking the <code><FONT COLOR="MediumOrchid">Dark mode</FONT></code> button should change the web page
+                to look something like this:</p>
+            <img src="images/dark_mode.png" alt="Dark mode">
+            <p>Clicking the <code><FONT COLOR="MediumOrchid">Scream mode</FONT></code> button should change the web page
+                to look something like this:</p>
+            <img src="images/scream_mode.png" alt="Scream mode">
+
+            <script src="./5-mode.js"></script>
+        </li>
+        <li>
+            <p>Executing the code should display in the console</p>
+            <pre>
+                <code>
+                    Harry: 4
+                    Draco: -2
+                </code>
+            </pre>
+            <script src="./6-hogwarts.js"></script>
+        </li>
+        <li>
+            <p>Your code should log to the console the following:</p>
+            <pre>
+                <code>
+                    Start of the execution queue
+                    1
+                    2
+                    ...
+                    100
+                    End of the loop printing
+                    Final code block to be executed
+                </code>
+            </pre>
+            <script src="./7-timeout.js"></script>
+        </li>
+        <li>
+            <p>Your code should log the following to the console</p>
+            <pre>
+                <code>
+                    Processing orders
+                    12321 is being processed
+                    Collecting payment of 10.99
+                    12321 has been fully processed
+                    12322 is being processed
+                    Collecting payment of 12.99
+                    12322 has been fully processed
+                    12323 is being processed
+                    Collecting payment of 15
+                    12323 has been fully processed
+                    All the orders have been processed
+                </code>
+            </pre>
+            <script src="./8-payments.js"></script>
+        </li>
+        <li>
+            <ul>
+                <li>
+                    You must use <code><FONT COLOR="MediumOrchid">performance</FONT></code> API to measure the time
+                    needed to execute the function (<code><FONT COLOR="MediumOrchid">performance.now()</FONT></code>)
+                </li>
+                <li>
+                    Your code should display something in the range of
+                    <code><FONT COLOR="MediumOrchid">Execution time of printing countPrimeNumbers was 0.2700000002514571 milliseconds.</FONT></code>
+                </li>
+            </ul>
+            <script src="./9-prime.js"></script>
+        </li>
+        <li>
+            <p>Your code should display something in the range of
+                <code><FONT COLOR="MediumOrchid">Execution time of calculating prime numbers 100 times was 40.865000002551824 milliseconds.</FONT></code>
+            </p>
+            <script src="./10-prime.js"></script>
+            <script src="./11-prime.js"></script>
+        </li>
+        <li>
+            <p>Calling <code><FONT COLOR="MediumOrchid">bindLogWelcomeUser('Hello');</FONT></code> should return
+                <code><FONT COLOR="MediumOrchid">Hello, Buillaume. Your occupation is: Engineer</FONT></code></p>
+            <script src="./13-bind_user.js"></script>
+        </li>
+        <script src="./14-wikipedia.js"></script>
+        <script src="./100-stock.js"></script>
+    </ol>
+</body>
+
+</html>
