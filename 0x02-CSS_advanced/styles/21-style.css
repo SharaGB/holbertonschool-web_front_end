@@ -551,6 +551,7 @@ ul.row {
 .nav .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
+
 [class^="col-"] {
     float: left;
     padding: 0.5rem;
