@@ -365,6 +365,7 @@ a:active {
 
 /* Grid
       ============================= */
+
 .row {
     display: flex;
 }
@@ -375,7 +376,14 @@ ul.row {
     list-style: none;
 }
 
+/* .row::after {
+    content: '';
+    display: table;
+    clear: both;
+} */
+
 [class*='col-'] {
+    /* float: left; */
     padding: 0.5rem;
 }
 
@@ -556,7 +564,8 @@ ul.row {
     padding: 10rem 40rem 2rem 0;
 }
 
-/* Section Latest news ============================= */
+/* Section Latest news
+      ============================= */
 
 .section-latest-news .row {
     flex-direction: row-reverse;
