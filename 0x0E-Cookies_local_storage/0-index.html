@@ -15,16 +15,16 @@
     <h1>Cookies</h1>
     <button onclick="showCookies()">Show the cookies</button>
     <script>
-        function setCookies() {
-          document.cookie = `firstname=${document.getElementById("firstname").value()}`
-          document.cookie = `email=${document.getElementById("email").value()}`
-        };
+      function setCookies() {
+        document.cookie = `firstname=${document.getElementById("firstname").value()}`
+        document.cookie = `email=${document.getElementById("email").value()}`
+      };
 
-        function showCookies() {
-            const para = document.createElement("p");
-            para.innerHTML = `Cookies: ${document.cookie}`;
-            document.body.appendChild(para);
-        }
+      function showCookies() {
+        const para = document.createElement("p");
+        para.innerHTML = `Cookies: ${document.cookie}`;
+        document.body.appendChild(para);
+      }
     </script>
   </body>
 </html>
