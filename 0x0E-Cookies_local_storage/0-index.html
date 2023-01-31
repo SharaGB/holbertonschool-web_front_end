@@ -16,10 +16,8 @@
     <button onclick="showCookies()">Show the cookies</button>
     <script>
         function setCookies() {
-            const firstname = document.getElementById("firstname").value;
-            const email = document.getElementById("email").value;
-            document.cookie = `firstname=${firstname}`;
-            document.cookie = `email=${email}`;
+          document.cookie = `firstname=${document.getElementById("firstname").value()}`
+          document.cookie = `email=${document.getElementById("email").value()}`
         };
 
         function showCookies() {
