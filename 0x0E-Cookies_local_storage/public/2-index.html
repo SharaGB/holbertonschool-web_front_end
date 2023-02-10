@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Task 2</title>
-	</head>
-	<body>
-		<section>
-			<h1>Login to the Website</h1>
-			<input id="firstname" placeholder="Firstname">
-			<input id="email" placeholder="Email">
-			<button type="button" onclick="setCookies()">Log me in</button>
-		</section>
-		<section>
-			<h1>Cookies</h1>
-			<button type="submit" onclick="showCookies()">Show the cookies</button>
-		</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <section>
+        <h1>Login to the Website</h1>
+        <input id="firstname" placeholder="Firstname">
+        <input id="email" placeholder="Email">
+        <button type="button" onclick="setCookies()">Log me in</button>
+    </section>
+    <section>
+        <h1>Cookies</h1>
+        <button type="submit" onclick="showCookies()">Show the cookies</button>
+    </section>
 
-		<script>
-			function setCookies() {
-				document.cookie = "firstname=" + document.getElementById("firstname").value
-        document.cookie = "email=" + document.getElementById("email").value
-        let date = new Date(Date.now() + 86400e3);
-        date = date.toUTCString();
-        document.cookie = "expire=" + date;
-			}
+    <script>
+        function setCookies() {
+            document.cookie = "firstname=" + document.getElementById("firstname").value
+            document.cookie = "email=" + document.getElementById("email").value
+            let date = new Date(Date.now() + 86400e3);
+            date = date.toUTCString();
+            document.cookie = "expire=" + date;
+        }
 
-			function showCookies() {
-        let put = document.createElement("p")
-        put.innerHTML = "Email: " + getCookie('email') + " - " + "Firstname: " + getCookie('firstname')
-        document.body.appendChild(put)
-      }
+        function showCookies() { 
+            let put = document.createElement("p")
+            put.innerHTML = "Email: " + getCookie('email') + " - " + "Firstname: " + getCookie('firstname')
+            document.body.appendChild(put)
+        }
 
-			function getCookie(name) {
-				let nom = document.cookie.split("; ");
-				for (let i in nom) {
-					let m = nom[i].split("=");
-					if (m[0] == name) return m[1];
-				}
-				return "";
-      }
+        function getCookie(name) {
+            let nom = document.cookie.split("; ");
+            for (let i in nom) {
+                let m = nom[i].split("=");
+                if (m[0] == name) return m[1];
+            }
+            return "";
+            }
     </script>
-	</body>
+</body>
 </html>
