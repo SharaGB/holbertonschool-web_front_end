@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+<body>
+    <div id="form">
+        <h2>Login to the Website</h2>
+        <input id="firstname" placeholder="Firstname">
+        <input id="email" placeholder="Email">
+        <button type="button" onclick="setCookies()">Log me in</button>
+    </div>
+
+    <script>
+        function showForm() {
+            document.getElementById("form").style.display = "block"
+        }
+
+        function hideForm() {
+            document.getElementById("form").style.display = "none"
+        }
+
+        function deleteCookiesAndShowForm() {
+            document.getElementById("tittle").remove();
+            Cookies.remove("firstname")
+            Cookies.remove("email")
+            document.getElementById('email').value = ""
+            document.getElementById('firstname').value = ""
+            showForm()
+        }
+
+        function showWelcomeMessageOrForm() {
+            let name = Cookies.get('firstname')
+            let mail = Cookies.get('email')
+            if (name && mail) {
+                hideForm()
+                let gre = document.createElement("h1")
+                gre.setAttribute("id", "tittle")
+                gre.innerHTML = 'Welcome: ' + name
+                let exit = document.createElement("a")
+                exit.innerHTML = '(logout)'
+                exit.setAttribute("onclick", "deleteCookiesAndShowForm()")
+                exit.style.fontWeight = "normal"
+                exit.style.fontStyle = "italic"
+                exit.style.marginLeft = "10px"
+                gre.appendChild(exit)
+                document.body.appendChild(gre)
+                document.getElementById("tittle").style.display = "block"
+            }
+            else showForm()
+        }
+
+        function setCookies() {
+            Cookies.set("firstname", document.getElementById("firstname").value, { expires: 10 })
+            Cookies.set("email", document.getElementById("email").value, { expires: 10 })
+            showWelcomeMessageOrForm()
+        }
+
+        function showCookies() { 
+            let put = document.createElement("p")
+            put.innerHTML = "Email: " + getCookie('email') + " - " + "Firstname: " + getCookie('firstname')
+            document.body.appendChild(put)
+        }
+    </script>
+</body>
+</html>
