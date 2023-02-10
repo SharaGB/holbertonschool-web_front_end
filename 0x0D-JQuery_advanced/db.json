@@ -1,0 +1,63 @@
+{
+  "posts": [
+    {
+      "title": "json-server",
+      "author": "typicode",
+      "id": 1
+    },
+    {
+      "title": "fd",
+      "author": "fffff",
+      "id": 2
+    },
+    {
+      "title": "Charls_t",
+      "author": "Charls",
+      "id": 3
+    },
+    {
+      "title": "C_bastian",
+      "author": "Sebastian",
+      "id": 4
+    },
+    {
+      "title": "Draeney",
+      "author": "Daenerys",
+      "id": 5
+    },
+    {
+      "title": "Snow",
+      "author": "Jon",
+      "id": 6
+    },
+    {
+      "title": "Dracarys",
+      "author": "Damon",
+      "id": 7
+    },
+    {
+      "title": "Snk",
+      "author": "Eren",
+      "id": 8
+    },
+    {
+      "title": "Wow",
+      "author": "Sylvanas",
+      "id": 9
+    },
+    {
+      "title": "22",
+      "author": "James",
+      "id": 10
+    },
+    {
+      "title": "Elite",
+      "author": "Karla",
+      "id": 11
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
