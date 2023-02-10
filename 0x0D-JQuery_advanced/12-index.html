@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 11</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script type="application/javascript">
+      const url = 'http://localhost:3000/posts/';
+      function addPostRow(data) {
+        let p = $('<p></p>');
+        let span = $('<span></span>');
+        let span2 = $('<span></span>');
+
+        span.append(`Post created with id ${data.id}, title: ${data.title}, author: ${data.author}`);
+
+        span2.append('(delete)');
+        span2.click(() => deletePost(data.id));
+
+        p.append(span2, span);
+        $('body').append(p);
+      }
+
+      function listPosts() {
+        $.get(url)
+        .done((data) => data.forEach(item => addPostRow(item)))
+        .fail(() => alert('Server Error'));
+      }
+
+      function buildForm() {
+        let form = $('<form></form>');
+        let divContentAuthor = $('<div></div>');
+        let divContentTitle = $('<div></div>');
+        let submit = $('<input type="submit">')
+
+        divContentAuthor.append('<label for="author">Author</label>' +
+        '<input type="text" id="author">');
+
+        divContentTitle.append('<label for="title">Title</label>' +
+        '<textarea id="title"></textarea>');
+
+        form.submit((eventData) => {
+          eventData.preventDefault();
+          sendForm();
+        });
+
+        form.append(divContentAuthor, divContentTitle, submit);
+        $('body').append(form);
+      }
+
+      function sendForm() {
+        let valueInput = $('input').val();
+        let valueTextArea = $('textarea').val();
+        let dataJson = {
+          "title" : valueInput,
+          "author": valueTextArea
+        };
+
+        $('form').after('About to send the query to the API');
+        $.post(url, dataJson).fail(() => alert('Error sending the POST query'));
+      }
+
+      function deletePost(dataId) {
+        $.ajax({
+          type: 'DELETE',
+          url: url + dataId,
+          success: (data) => $('#row-' + dataId).remove(),
+          error: (error) => alert('Post was not deleted')
+        })
+      }
+
+      listPosts();
+      buildForm();
+    </script>
+  </body>
+</html>
