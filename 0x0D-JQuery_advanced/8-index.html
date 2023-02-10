@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Task 8</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+      integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <script type="application/javascript">
+      $(document).ready(() => {
+        $.createSearchForm = () => {
+          $("body").append($("<input>").attr("type", "text"));
+          $("body").append(
+            $("<input>")
+              .attr("type", "submit")
+              .attr("value", "Submit")
+              .click(function () {
+                $.queryWikipedia($("input").val());
+              })
+          );
+          $("body").append("<ul>");
+          $("body").append("<ul id='pagination'>");
+        };
+        $.addNewArticle = (id, title, snippet) => {
+          $("ul").append(
+            $("<li>").append($("<p>").append($("<span>").text(`${id} - `), $("<b>").text(title)), $("<p>").html(snippet))
+              );
+        };
+        $.queryWikipedia = (search, offset=0) => {
+          let $url = "https://en.wikipedia.org/w/api.php";
+
+          let params = {
+            action: "query",
+            list: "search",
+            srsearch: search,
+            sroffset: offset,
+            format: "json",
+          };
+
+          $url = $url + "?origin=*";
+          Object.keys(params).forEach(function(key) {
+            $url += "&" + key + "=" + params[key];
+          });
+          $.ajax({
+            url: $url,
+            type: "get",
+          })
+            .done((response) => {
+              $("ul").first().empty();
+              let data = response.query.search;
+              data.forEach(d => $.addNewArticle(d.pageid, d.title, d.snippet));
+              $.buildPagination(response.query.searchinfo.totalhits, 10, offset);
+            })
+        };
+        $.buildPagination = (numberofItems, itemsPerPage, currentOffset) => {
+          $("#pagination").empty();
+          for (let i = 1; i < (numberofItems / itemsPerPage); i++) {
+            let $li = $("<li>").html(i).css({"cursor": "pointer", "margin-left": "10px", "display": "inline"});
+            if (currentOffset === itemsPerPage * (i - 1))
+              $li.css("font-weight", "bold");
+            $("#pagination").append($li);
+          }
+          $("#pagination li").click(function() {
+            $.queryWikipedia($("input").val(), itemsPerPage * ($(this).html() - 1));
+          })
+        }
+        $.createSearchForm();
+      });
+    </script>
+  </body>
+</html>
