@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>0</title>
+		<title>Task 1</title>
 	</head>
+
 	<body>
 		<section>
 			<h1>Login to the Website</h1>
@@ -18,18 +19,19 @@
 		</section>
 
 		<script>
-        function setCookies() {
-            document.cookie = "firstname=" + document.getElementById("firstname").value
-            document.cookie = "email=" + document.getElementById("email").value
-            let date = new Date(Date.now() + 86400e3);
-            date = date.toUTCString();
-            document.cookie = "expire=" + date;
-        }
-        function showCookies() {
-            let put = document.createElement("p")
-            put.innerHTML = "Cookies: " + document.cookie
-            document.body.appendChild(put)
-        }
+			function setCookies() {
+				document.cookie = "firstname=" + document.getElementById("firstname").value
+				document.cookie = "email=" + document.getElementById("email").value
+				let date = new Date(Date.now() + 86400e3);
+				date = date.toUTCString();
+				document.cookie = "expire=" + date;
+			}
+
+			function showCookies() {
+				let put = document.createElement("p")
+				put.innerHTML = "Cookies: " + document.cookie
+				document.body.appendChild(put)
+			}
     </script>
 	</body>
 </html>
