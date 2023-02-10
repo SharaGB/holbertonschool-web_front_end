@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Task 1</title>
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <section>
+        <h1>Login to the Website</h1>
+        <input id="firstname" placeholder="Firstname">
+        <input id="email" placeholder="Email">
+        <button type="button" onclick="setCookies()">Log me in</button>
+    </section>
+    <section>
+        <h1>Cookies</h1>
+        <button type="submit" onclick="showCookies()">Show the cookies</button>
+    </section>
 
-	<body>
-		<section>
-			<h1>Login to the Website</h1>
-			<input id="firstname" placeholder="Firstname">
-			<input id="email" placeholder="Email">
-			<button type="button" onclick="setCookies()">Log me in</button>
-		</section>
-		<section>
-			<h1>Cookies</h1>
-			<button type="submit" onclick="showCookies()">Show the cookies</button>
-		</section>
+    <script>
+        function setCookies() {
+            document.cookie = "firstname=" + document.getElementById("firstname").value
+            document.cookie = "email=" + document.getElementById("email").value
+            let date = new Date(Date.now() + 86400e3);
+            date = date.toUTCString();
+            document.cookie = "expire=" + date;
+        }
 
-		<script>
-			function setCookies() {
-				document.cookie = "firstname=" + document.getElementById("firstname").value
-				document.cookie = "email=" + document.getElementById("email").value
-				let date = new Date(Date.now() + 86400e3);
-				date = date.toUTCString();
-				document.cookie = "expire=" + date;
-			}
-
-			function showCookies() {
-				let put = document.createElement("p")
-				put.innerHTML = "Cookies: " + document.cookie
-				document.body.appendChild(put)
-			}
+        function showCookies() { 
+            let put = document.createElement("p")
+            put.innerHTML = "Cookies: " + document.cookie
+            document.body.appendChild(put)
+        }
     </script>
-	</body>
+</body>
 </html>
