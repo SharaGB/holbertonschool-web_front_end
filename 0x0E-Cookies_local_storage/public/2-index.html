@@ -25,7 +25,7 @@
             date = date.toUTCString();
             document.cookie = "expire=" + date;
         }
-        function showCookies() { 
+        function showCookies() {
             let put = document.createElement("p")
             put.innerHTML = "Email: " + getCookie('email') + " - " + "Firstname: " + getCookie('firstname')
             document.body.appendChild(put)
