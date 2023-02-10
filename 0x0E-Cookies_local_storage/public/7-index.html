@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+</head>
+<body>
+    <script>
+        function lsTest(){
+        var test = 'test';
+        try {
+            sessionStorage.setItem(test, test);
+            sessionStorage.removeItem(test);
+            return true;
+        } catch(e) {
+            return false;
+        }
+        }
+
+        if(lsTest() != true) {
+            alert("Sorry, your browser does not support Web storage. Try again with a better one");
+        }
+        let availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+        let cart = {};
+        console.log(availableItems)
+
+        let addItemToCart = (item) => {
+            console.log(item)
+            sessionStorage.setItem(item, true);
+        }
+        let createStore = () => {
+            let lst = document.createElement("ul");
+            document.body.appendChild(lst);
+            for (let item of availableItems) {
+                console.log(item)
+                let it = document.createElement('li');
+                it.innerHTML = item;
+                it.setAttribute(`onclick`, `addItemToCart('${item}')`);
+                lst.appendChild(it);
+            }
+        }
+        let displayPort = () => {
+            console.log(sessionStorage.length);
+            console.log(sessionStorage);
+            if (sessionStorage.length === 0) return;
+            let p = document.createElement("p");
+            p.innerHTML = 'You previously had ' + sessionStorage.length + ' items in your cart';
+            document.body.appendChild(p);
+        }
+        createStore()
+        displayPort()
+    </script>
+</body>
+</html>
