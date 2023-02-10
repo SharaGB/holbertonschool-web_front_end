@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Task 3</title>
+	</head>
+	<body>
+		<div id="form">
+			<h2>Login to the Website</h2>
+			<input id="firstname" placeholder="Firstname">
+			<input id="email" placeholder="Email">
+			<button type="button" onclick="setCookies()">Log me in</button>
+		</div>
+
+		<script>
+			function showForm() {
+				document.getElementById("form").style.display = "block"
+			}
+
+			function hideForm() {
+				document.getElementById("form").style.display = "none"
+			}
+
+			function deleteCookiesAndShowForm() {
+				document.getElementById("tittle").remove();
+				document.cookies = "firstname=; email=; expires=Sun, 14 Jul 1985 21:00:00 UTC"
+				document.getElementById('email').value = ""
+				document.getElementById('firstname').value = ""
+				showForm()
+			}
+
+			function showWelcomeMessageOrForm() {
+				let name = getCookie('firstname')
+				let mail = getCookie('email')
+				if (name && mail) {
+					hideForm()
+					let gre = document.createElement("h1")
+					gre.setAttribute("id", "tittle")
+          gre.innerHTML = 'Welcome: ' + name
+          let exit = document.createElement("a")
+          exit.innerHTML = '(logout)'
+          exit.setAttribute("onclick", "deleteCookiesAndShowForm()")
+          exit.style.fontWeight = "normal"
+          exit.style.fontStyle = "italic"
+          exit.style.marginLeft = "10px"
+          gre.appendChild(exit)
+          document.body.appendChild(gre)
+          document.getElementById("tittle").style.display = "block"
+				}
+				else showForm()
+			}
+
+			function setCookies() {
+				document.cookie = "firstname=" + document.getElementById("firstname").value
+        document.cookie = "email=" + document.getElementById("email").value
+        let date = new Date(Date.now() + 86400e3);
+        date = date.toUTCString();
+        document.cookie = "expire=" + date;
+        showWelcomeMessageOrForm()
+			}
+
+			function showCookies() {
+				let put = document.createElement("p")
+        put.innerHTML = "Email: " + getCookie('email') + " - " + "Firstname: " + getCookie('firstname')
+        document.body.appendChild(put)
+			}
+
+			function getCookie(name) {
+				let nom = document.cookie.split("; ");
+				for (let i in nom) {
+					let m = nom[i].split("=");
+					if (m[0] == name) return m[1];
+				}
+				return "";
+			}
+    </script>
+	</body>
+</html>
